@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UtF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>JS button</title>
+        <style>
+            .button{
+                text-align:center;
+            }
+        </style>
+    </head>
     <body>
-        <h2>Code example :</h2>
-        <pre>
-            <code>
-                var person = {
-                    firstName : "Your first name",
-                    lastName : "Your last name",
-                    studentId : "Your student ID"
-                }
-            </code>
-        </pre>
+        <h2 id="demo">Hello</h2>
+        <button class="button" onmouseover="document.getElementById('demo').style.color='magenta'"
+        onclick="document.getElementById('demo').innerHTML='Mouse Click'">Button</button>
     </body>
 </html>
