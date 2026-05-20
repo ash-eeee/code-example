@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UtF-8">
-        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-        <title>JS button</title>
-        <style>
-            .button{
-                text-align:center;
-            }
-        </style>
+        <meta charset="UTF-8">
+        <title>JS</title>
     </head>
     <body>
-        <h2 id="demo">Hello</h2>
-        <button class="button" onmouseover="document.getElementById('demo').style.color='magenta'"
-        onclick="document.getElementById('demo').innerHTML='Mouse Click'">Button</button>
+        <script>
+            function clacCircumfrence(radius){
+                let circumference = 2 * Math.PI * radius;
+                console.log("The cirumference is " + circumference.toFixed(2));
+            }
+            function calcArea(radius){
+                let area = Math.PI * radius * radius;
+                console.log("The area is " + area.toFixed(2));
+            }
+
+            let testRadius = 5;
+            clacCircumfrence(testRadius);
+            calcArea(testRadius);
+        </script>
     </body>
 </html>
